@@ -730,16 +730,26 @@ function App() {
           </div>
 
           {wishlistProducts.length === 0 ? (
-            <div className="empty-state">
-              <h3>Your wishlist is empty</h3>
-              <p>Save products you love and find them here.</p>
+            <div className="empty-wishlist">
+              <div className="empty-wishlist-icon">♡</div>
+
+              <h2>Your wishlist is waiting for some love!</h2>
+
+              <p>
+                You haven't saved any products yet. Explore our collection and
+                add your favourite gadgets here.
+              </p>
 
               <button
-                className="checkout-button"
+                className="empty-wishlist-button"
                 onClick={() => setActiveView("products")}
               >
-                Explore Products
+                Discover Products <span>→</span>
               </button>
+
+              <div className="empty-wishlist-note">
+                ✨ Your favourite products, all in one place!
+              </div>
             </div>
           ) : (
             <div className="product-grid">
@@ -769,16 +779,26 @@ function App() {
           <h2>My Shopping Cart</h2>
 
           {cartItems.length === 0 ? (
-            <div className="empty-state">
-              <h3>Your cart is empty</h3>
-              <p>Looks like you haven't added anything yet.</p>
+            <div className="empty-cart">
+              <div className="empty-cart-icon">🛒</div>
+
+              <h2>Your cart is feeling lonely!</h2>
+
+              <p>
+                Your shopping cart is currently empty. Discover amazing gadgets
+                and find something you love.
+              </p>
 
               <button
-                className="checkout-button"
+                className="empty-cart-button"
                 onClick={() => setActiveView("products")}
               >
-                Continue Shopping
+                Explore Products <span>→</span>
               </button>
+
+              <div className="empty-cart-suggestions">
+                <span>✨</span> Great deals are waiting for you!
+              </div>
             </div>
           ) : (
             <div className="cart-layout">
