@@ -880,7 +880,13 @@ function App() {
       {/* CHECKOUT PAGE */}
       {activeView === "checkout" && (
         <section className="checkout-section page-view">
-          <h2>Checkout</h2>
+          <div className="checkout-heading">
+            <p>ALMOST THERE!</p>
+            <h2>
+              Complete Your Order <span>♡</span>
+            </h2>
+            <span>Just a few details before your gadgets reach you.</span>
+          </div>
 
           {cartItems.length === 0 ? (
             <div className="empty-state">
@@ -896,7 +902,13 @@ function App() {
           ) : (
             <div className="checkout-layout">
               <form className="checkout-form" onSubmit={placeOrder}>
-                <h3>Delivery Details</h3>
+                <div className="checkout-form-heading">
+                  <span className="checkout-heading-icon">📦</span>
+                  <div>
+                    <h3>Delivery Information</h3>
+                    <p>Where should we deliver your order?</p>
+                  </div>
+                </div>
 
                 <label>Full Name</label>
                 <input
@@ -949,7 +961,10 @@ function App() {
 
               {/* ORDER SUMMARY */}
               <aside className="cart-summary">
-                <h3>Your Order</h3>
+                <div className="order-summary-heading">
+                  <span>🛍️</span>
+                  <h3>Order Summary</h3>
+                </div>
 
                 {cartItems.map((item) => (
                   <div className="summary-row" key={item.id}>
