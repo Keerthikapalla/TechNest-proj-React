@@ -229,11 +229,11 @@
   }
 
   .wishlisted {
-    top: 9px;
-    right: 9px;
-    width: 36px;
-    height: 36px;
-    font-size: 24px;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
   }
 
   .product-details {

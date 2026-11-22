@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import ProductCard from "./components/ProductCard.jsx";
+import ProductCard from "./components/productCard.jsx";
+
 import "./App.css";
 
 const products = [

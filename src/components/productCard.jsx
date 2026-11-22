@@ -1,6 +1,6 @@
 import "./ProductCard.css";
 
-function ProductCard({
+export default function ProductCard({
   id,
   name,
   category,
@@ -36,7 +36,7 @@ function ProductCard({
           }
           title={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
         >
-          {isWishlisted ? "❤️" : "🤍"}
+          {isWishlisted ? "💜" : "🤍"}
         </button>
 
         <img src={image} alt={name} loading="lazy" />
@@ -90,5 +90,3 @@ function ProductCard({
     </article>
   );
 }
-
-export default ProductCard;
