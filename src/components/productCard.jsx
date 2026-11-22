@@ -1,4 +1,4 @@
-import "./ProductCard.css";
+import "./productCard.css";
 
 export default function ProductCard({
   id,
